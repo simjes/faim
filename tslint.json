@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier",
+    "tslint-react-hooks"
+  ],
+  "rules": {
+    "no-any": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "member-ordering": false,
+    "jsx-alignment": true,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "no-submodule-imports": false,
+    "interface-name": [true, "never-prefix"],
+    "object-literal-sort-keys": false,
+    "no-object-literal-type-assertion": false,
+    "react-hooks-nesting": "error"
+  },
+  "linterOptions": {
+    "exclude": ["node_modules"]
+  }
+}
