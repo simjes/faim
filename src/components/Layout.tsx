@@ -8,7 +8,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { ReactNode } from 'react';
-import Header from './Header';
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const data = useStaticQuery(graphql`
@@ -23,13 +22,14 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <h1>{data.site.siteMetadata.title}</h1>
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
+          height: '100%',
         }}
       >
         <main>{children}</main>
