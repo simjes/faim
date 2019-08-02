@@ -21,25 +21,21 @@ const Layout = ({ children }: { children: ReactNode }) => {
   `);
 
   return (
-    <>
-      <h1>{data.site.siteMetadata.title}</h1>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-          height: '100%',
-        }}
-      >
-        <main>{children}</main>
-        <footer>
+    <div className="flex flex-col min-h-screen">
+      {/* <h1>{data.site.siteMetadata.title}</h1> */}
+
+      <main className="flex flex-col items-center flex-grow container px-4">
+        {children}
+      </main>
+
+      <footer className="flex-grow-0">
+        <div className="flex justify-center container">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
+        </div>
+      </footer>
+    </div>
   );
 };
 

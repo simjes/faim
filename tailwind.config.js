@@ -1,7 +1,14 @@
 module.exports = {
   theme: {
-    extend: {}
+    container: {
+      center: true,
+    },
+    extend: {},
   },
   variants: {},
-  plugins: []
-}
+  plugins: [],
+};
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif; */
