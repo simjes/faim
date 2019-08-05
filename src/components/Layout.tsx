@@ -21,7 +21,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   `);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen py-6">
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
 
       <main className="flex flex-col items-center flex-grow container px-4">

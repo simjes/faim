@@ -3,7 +3,21 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    backgroundColor: {
+      primary: '#1b1b35',
+      secondary: '#ffffff',
+      danger: '#e3342f',
+    },
+    extend: {
+      colors: {
+        aqua: '#24D8FF',
+        gorse: '#FEFF57',
+        purplePizzazz: '#EB00C1',
+        blazeOrange: '#FF6D00',
+        primary: '#ffffff',
+        secondary: '#1b1b1b',
+      },
+    },
   },
   variants: {},
   plugins: [],
