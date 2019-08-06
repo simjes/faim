@@ -5,15 +5,17 @@ module.exports = {
     },
     backgroundColor: {
       primary: '#1b1b35',
-      secondary: '#ffffff',
+      secondary: '#ffffffcc',
       danger: '#e3342f',
     },
     extend: {
       colors: {
         aqua: '#24D8FF',
         gorse: '#FEFF57',
-        purplePizzazz: '#EB00C1',
+        hollywoodCerise: '#ff009b',
         blazeOrange: '#FF6D00',
+      },
+      textColor: {
         primary: '#ffffff',
         secondary: '#1b1b1b',
       },

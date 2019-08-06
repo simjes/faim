@@ -24,6 +24,6 @@
     "react-hooks-nesting": "error"
   },
   "linterOptions": {
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", ".cache"]
   }
 }
