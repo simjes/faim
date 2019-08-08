@@ -1,40 +1,30 @@
 import React from 'react';
-import Highlight from '../components/Highlight';
+import Highlights from '../components/Highlights';
 import Layout from '../components/Layout';
-import Section from '../components/Section';
 import SEO from '../components/Seo';
-import Cloud from '../images/cloud.svg';
-import Schedule from '../images/schedule.svg';
 import Share from '../images/share.svg';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <div className="flex flex-wrap md:flex-no-wrap">
-      <h1 className="">Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
+    <div className="relative flex flex-col items-center md:block w-full mt-40">
+      <Share className="landing-background" />
+
+      <div className="lg:ml-vw-10 xl:ml-vw-20 w-56">
+        <h1 className="text-5xl">Faim</h1>
+
+        <p className="my-4">Tired of asking the same question every day?</p>
+
+        <q>what should I eat today?</q>
+
+        <p className="my-4">Let us help you answer that!</p>
+
+        <button className="get-started">Get Started</button>
+      </div>
     </div>
 
-    <p>Now go build something great.</p>
-
-    <Section reverse={false}>
-      <Highlight />
-
-      <Share className="h-64 w-auto" />
-    </Section>
-
-    <Section reverse={true}>
-      <Highlight />
-
-      <Schedule className="h-64 w-auto" />
-    </Section>
-
-    <Section reverse={false}>
-      <Highlight />
-
-      <Cloud className="h-64 w-auto" />
-    </Section>
+    <Highlights className="mt-32 xl:mt-96" />
   </Layout>
 );
 

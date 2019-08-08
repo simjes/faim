@@ -1,0 +1,11 @@
+.highlights {
+  display: grid;
+  grid-gap: 110px;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+@media (min-width: 768px) {
+  .highlights {
+    grid-gap: 80px;
+  }
+}

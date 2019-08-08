@@ -1,11 +1,8 @@
 module.exports = {
   theme: {
-    container: {
-      center: true,
-    },
     backgroundColor: {
       primary: '#1b1b35',
-      secondary: '#ffffffcc',
+      secondary: '#ffffff',
       danger: '#e3342f',
     },
     extend: {
@@ -18,6 +15,18 @@ module.exports = {
       textColor: {
         primary: '#ffffff',
         secondary: '#1b1b1b',
+      },
+      height: {
+        72:'18rem',
+        80:'20rem',
+        88:'22rem',
+        96: '24rem',
+        120: '30rem',
+      },
+      margin: {
+        96: '24rem',
+        'vw-10': '10vw',
+        'vw-20': '20vw',
       },
     },
   },

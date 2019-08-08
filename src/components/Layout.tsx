@@ -21,10 +21,10 @@ const Layout = ({ children }: { children: ReactNode }) => {
   `);
 
   return (
-    <div className="flex flex-col min-h-screen py-6">
+    <div className="flex flex-col items-center min-h-screen py-6">
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
 
-      <main className="flex flex-col items-center flex-grow container px-4">
+      <main className="flex flex-col flex-grow w-full items-center px-4 sm:px-24">
         {children}
       </main>
 

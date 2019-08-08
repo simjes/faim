@@ -25,7 +25,7 @@ a:focus {
 body {
   font-family: 'Montserrat', sans-serif;
   @apply text-primary;
-  @apply bg-primary;
+  background: linear-gradient(#0a0a40, #3a24c2, #482be7);
 }
 
 h1,
@@ -37,9 +37,49 @@ h6 {
   font-family: 'Lato', sans-serif;
 }
 
+q {
+  font-family: 'Indie Flower', cursive;
+  @apply text-xl;
+  @apply text-gorse;
+}
+
 @tailwind components;
 
 @tailwind utilities;
 
-/* font-family: 'Indie Flower', cursive;
-font-family: 'Lato', sans-serif; */
+.get-started {
+  @apply px-12;
+  @apply py-4;
+  @apply rounded;
+  background: linear-gradient(105deg, #00c6ff, #0072ff);
+}
+
+.landing-background {
+  display: block;
+  z-index: -1;
+  width: auto;
+  height: 14rem;
+}
+
+@media (min-width: 768px) {
+  .landing-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 16rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-background {
+    top:0;
+    right: 10vw;
+    height: 18rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .landing-background {
+    height: 30rem;
+  }
+}

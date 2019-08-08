@@ -1,20 +1,21 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import './highlights.css';
 
-const Highlight = () => {
+const Highlight = ({
+  title,
+  text,
+  icon,
+}: {
+  title: string;
+  text: string;
+  icon: ReactNode;
+}) => {
   return (
-    <div className="
-        bg-secondary
-        text-secondary
-        rounded-lg
-        p-6
-        mx-16
-        max-w-sm
-        font-bold 
-        shadow-lg
-      ">
-      Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text ever
-      since the 1500s
+    <div className="bg-secondary text-secondary rounded-lg py-20 px-6 shadow-lg text-center relative">
+      {icon}
+
+      <label className="font-bold">{title}</label>
+      <div className="mt-4">{text}</div>
     </div>
   );
 };
