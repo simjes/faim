@@ -53,33 +53,3 @@ q {
   @apply rounded;
   background: linear-gradient(105deg, #00c6ff, #0072ff);
 }
-
-.landing-background {
-  display: block;
-  z-index: -1;
-  width: auto;
-  height: 14rem;
-}
-
-@media (min-width: 768px) {
-  .landing-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 16rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .landing-background {
-    top:0;
-    right: 10vw;
-    height: 18rem;
-  }
-}
-
-@media (min-width: 1500px) {
-  .landing-background {
-    height: 30rem;
-  }
-}

@@ -8,23 +8,23 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <div className="relative flex flex-col items-center md:block w-full mt-40">
-      <Share className="landing-background" />
-
-      <div className="lg:ml-vw-10 xl:ml-vw-20 w-56">
+    <div className="flex flex-col-reverse md:flex-row items-center mt-32">
+      <div className="text-center md:text-left w-56">
         <h1 className="text-5xl">Faim</h1>
 
         <p className="my-4">Tired of asking the same question every day?</p>
 
-        <q>what should I eat today?</q>
+        <q>What should I eat today?</q>
 
         <p className="my-4">Let us help you answer that!</p>
 
         <button className="get-started">Get Started</button>
       </div>
+
+      <Share className="md:ml-12 xl:ml-32 h-56 md:h-64 lg:h-80 xl:h-120 w-auto" />
     </div>
 
-    <Highlights className="mt-32 xl:mt-96" />
+    <Highlights className="mt-32 xl:mt-40" />
   </Layout>
 );
 
