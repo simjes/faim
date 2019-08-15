@@ -1,0 +1,19 @@
+.details {
+  @apply ml-0;
+  @apply px-12;
+}
+
+.details > * {
+  @apply mt-12   
+}
+
+@screen sm {
+  .details {
+    @apply ml-12;
+    @apply px-0;
+  }
+
+  .details > *:first-child {
+    @apply mt-0;
+  }
+}

@@ -1,9 +1,8 @@
 module.exports = {
   theme: {
     backgroundColor: {
-      primary: '#1b1b35',
+      primary: '#1b1b1b',
       secondary: '#ffffff',
-      danger: '#e3342f',
     },
     extend: {
       colors: {
@@ -15,6 +14,7 @@ module.exports = {
       textColor: {
         primary: '#ffffff',
         secondary: '#1b1b1b',
+        tertiary: '#C5C5C5'
       },
       height: {
         72: '18rem',

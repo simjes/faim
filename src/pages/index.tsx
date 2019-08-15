@@ -1,4 +1,5 @@
 import React from 'react';
+import Details from '../components/Details';
 import Highlights from '../components/Highlights';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
@@ -26,6 +27,10 @@ const IndexPage = () => (
 
     <section className="features">
       <Highlights />
+    </section>
+
+    <section className="features">
+      <Details className="-mx-4 sm:-mx-24" />
     </section>
   </Layout>
 );
