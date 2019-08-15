@@ -53,3 +53,21 @@ q {
   @apply rounded;
   background: linear-gradient(105deg, #00c6ff, #0072ff);
 }
+
+.features {
+  @apply flex;
+  @apply w-full;
+  @apply mt-32;
+  @apply justify-center;
+}
+
+.features > * {
+  @apply flex-grow;
+  @apply justify-center;
+}
+
+@screen xl {
+  .features {
+    @apply mt-40;
+  }
+}

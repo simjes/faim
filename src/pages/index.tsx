@@ -24,7 +24,9 @@ const IndexPage = () => (
       <Share className="md:ml-12 xl:ml-32 h-56 md:h-64 lg:h-80 xl:h-120 w-auto" />
     </div>
 
-    <Highlights className="mt-32 xl:mt-40" />
+    <section className="features">
+      <Highlights />
+    </section>
   </Layout>
 );
 

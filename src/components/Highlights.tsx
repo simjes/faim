@@ -7,12 +7,7 @@ import Highlight from './Highlight';
 
 const Highlights = (props: HTMLProps<HTMLElement>) => {
   return (
-    <section
-      className={classNames(
-        'w-full justify-center mt-24 highlights',
-        props.className,
-      )}
-    >
+    <div className={classNames('highlights', props.className)}>
       <Highlight
         icon={
           <Pizza
@@ -45,7 +40,7 @@ const Highlights = (props: HTMLProps<HTMLElement>) => {
         title="Suggestions"
         text="Craving donuts? Ask our chatbot for recipes"
       />
-    </section>
+    </div>
   );
 };
 
